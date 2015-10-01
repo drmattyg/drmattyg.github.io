@@ -131,6 +131,7 @@ export class WHParser {
 
 
 	geocodeString(value : string, maxTries: number, callback : (GeoPoint) => void) : void {
+		console.log(value);
 		try {
 			if (maxTries < 0) {
 				callback(null);

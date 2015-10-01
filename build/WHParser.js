@@ -104,6 +104,7 @@ var WHParser = (function () {
     };
     WHParser.prototype.geocodeString = function (value, maxTries, callback) {
         var _this = this;
+        console.log(value);
         try {
             if (maxTries < 0) {
                 callback(null);
